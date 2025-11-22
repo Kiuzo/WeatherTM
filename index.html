@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo.</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- nav -->
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <h3 class="titulo-nav"><a href="#">WeatherTM</a></h3>
+                <div class="spans-nav">
+                    <div class="icons-spans-nav">
+                        <i class="fa-solid fa-arrow-right-to-bracket nav-icones"></i>
+                        <span><a href="#">Logar</a></span>
+                    </div>
+                    <div class="icons-spans-nav">
+                        <i class="fa-solid fa-user-plus nav-icones"></i>
+                        <span><a href="#">Criar conta</a></span>
+                    </div>
+                    <div class="icons-spans-nav">
+                        <i class="fa-solid fa-info-circle nav-icones"></i>
+                        <span><a href="#">Sobre</a></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- body -->
+    <main class="container">
+        <div class="card">
+            <div class="card-apresentacao">
+                <i class="fa-solid fa-temperature-half fa-2xl" style="color: #ff5475;"></i>
+                <h3>Veja se o clima está do seu lado hoje.</h3>
+            </div>
+
+            <form id="search" class="formulario">
+                <div>
+                    <i class="fa-solid fa-mountain-city fa-xl" style="color: #ff5475;"></i>
+                    <input type="search" name="cidade" id="cidade" placeholder="Buscar cidade">
+                </div>
+
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Pesquisar
+                </button>
+                
+            </form>
+
+            <div id="weather" class="weather">
+                <div class="infos">
+                    <div class="info-principal">
+                        <h1 id="title">São Paulo, BR</h1>
+                        <p id="temp_value">28<sup>°C</sup></p>
+                        <p id="temp_description">Ensolarado</p>
+                    </div>
+
+                    <div class="card-infos">
+                        <i class="fa-regular fa-sun fa-xl" style="color: #ff5475;"></i>
+                        <div>
+                            <p>Temperatura máxima</p>
+                            <p id="temp_max">32<sup>°C</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="card-infos">
+                        <i class="fa-solid fa-cloud fa-xl" style="color: #ff5475;"></i>
+                        <div>
+                            <p>Temperatura mínima</p>
+                            <p id="temp_min">22<sup>°C</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="card-infos">
+                        <i class="fa-solid fa-droplet fa-xl" style="color: #ff5475;"></i>
+                        <div>
+                            <p>Umidade</p>
+                            <p id="humidity">65%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <h3 class="titulo-nav"><a href="#">WeatherTM</a></h3>
+            <span>2025 © WeatherTM - Todos os direitos reservados. Políticas, termos e condições.</span>
+            <a href="https://github.com/kiuzo" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
